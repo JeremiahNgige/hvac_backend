@@ -1,0 +1,9 @@
+id,category_id,title,summary,difficulty,estimated_time,image_url,is_featured,created_at
+8,6,Cleaning Bathroom Exhaust Fans,"A dirty exhaust fan can't remove moisture properly, leading to mold. Clean it in a few simple steps.",easy,20 minutes,,False,2026-02-19T16:42:01.880491+00:00
+7,5,How to Seal Leaky Air Ducts,Leaky ducts waste 20-30% of conditioned air. Find and seal leaks to improve comfort and save energy.,medium,2-3 hours,,False,2026-02-19T16:42:01.872596+00:00
+6,3,Seasonal Heat Pump Maintenance Checklist,Keep your heat pump efficient year-round with this seasonal maintenance routine.,easy,1 hour,,True,2026-02-19T16:42:01.864638+00:00
+5,4,Installing a Smart Thermostat,Replace your old thermostat with a smart one for better comfort and energy savings.,medium,30-45 minutes,,True,2026-02-19T16:42:01.855079+00:00
+4,2,How to Unclog an AC Condensate Drain Line,A clogged drain line can cause water damage. Learn to clear blockages with simple tools.,easy,20 minutes,,False,2026-02-19T16:42:01.847985+00:00
+3,2,Cleaning Your AC Condenser Coils,Improve your AC efficiency by cleaning outdoor condenser coils — a simple maintenance task that saves energy.,easy,45 minutes,,True,2026-02-19T16:42:01.838679+00:00
+2,1,Troubleshooting a Furnace That Won't Ignite,"Step-by-step diagnosis when your gas furnace fails to light, from thermostat checks to igniter inspection.",medium,30-45 minutes,,True,2026-02-19T16:42:01.827426+00:00
+1,1,How to Replace Your Furnace Air Filter,"Learn how to locate, remove, and replace your furnace air filter to maintain proper airflow and indoor air quality.",easy,15 minutes,,True,2026-02-19T16:42:01.818192+00:00

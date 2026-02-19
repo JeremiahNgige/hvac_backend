@@ -1,0 +1,7 @@
+id,name,description,icon_name,color_hex
+2,Air Conditioner,"Central AC unit maintenance, cleaning, and common repair guides.",ac_unit,#0277BD
+5,Ductwork,"Air duct inspection, sealing, cleaning, and insulation guides.",air,#37474F
+1,Furnace,"Gas and electric furnace maintenance, troubleshooting, and repair guides.",local_fire_department,#E65100
+3,Heat Pump,"Heat pump system troubleshooting, seasonal maintenance, and efficiency tips.",heat_pump,#00695C
+4,Thermostat,"Thermostat installation, programming, and smart thermostat setup guides.",thermostat,#4527A0
+6,Ventilation,"Ventilation system maintenance, air quality improvement, and fan repairs.",toys,#1B5E20

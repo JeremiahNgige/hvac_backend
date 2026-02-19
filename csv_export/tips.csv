@@ -1,0 +1,11 @@
+id,category_id,title,content,tip_type,is_featured,created_at
+10,,Use Ceiling Fans to Supplement,"Ceiling fans make rooms feel 4-6°F cooler. Run counter-clockwise in summer, clockwise on low in winter to redistribute warm air.",energy,False,2026-02-19T16:42:01.909629+00:00
+9,,Keep Outdoor Units Clear,"Maintain 2+ feet of clearance around outdoor AC/heat pump units. Trim vegetation, remove debris, and don't stack items nearby.",maintenance,False,2026-02-19T16:42:01.907127+00:00
+8,,Know When to Call a Pro,"Some tasks require a licensed technician: refrigerant handling, electrical modifications, gas line work, and any repair you're unsure about.",safety,False,2026-02-19T16:42:01.904969+00:00
+7,,Keep Vents Clear,"Ensure furniture, curtains, and rugs don't block supply or return vents. Blocked vents create pressure imbalances and reduce efficiency.",maintenance,False,2026-02-19T16:42:01.902718+00:00
+6,,Use a Programmable Thermostat,Setting the thermostat back 7-10°F for 8 hours daily saves up to 10% yearly on heating and cooling costs.,energy,True,2026-02-19T16:42:01.900409+00:00
+5,,Seal and Insulate Ducts,"Leaky ducts reduce efficiency by 20-30%. Use mastic sealant or metal-backed tape to seal joints, and insulate ducts in unconditioned spaces.",energy,True,2026-02-19T16:42:01.897858+00:00
+4,,Schedule Professional Maintenance,"Schedule professional HVAC inspection yearly — spring for cooling, fall for heating. Pros catch issues DIY maintenance may miss.",maintenance,True,2026-02-19T16:42:01.895077+00:00
+3,,Change Filters Regularly,"Replace HVAC air filters every 30-90 days. Clean filters improve airflow, reduce energy use by 5-15%, and extend equipment life.",maintenance,True,2026-02-19T16:42:01.892510+00:00
+2,,Gas Leak Safety Protocol,"If you smell rotten eggs near your furnace, do NOT flip switches. Leave immediately and call your gas company from outside.",safety,True,2026-02-19T16:42:01.890279+00:00
+1,,Always Turn Off Power First,"Before any HVAC maintenance, turn off power at the thermostat AND circuit breaker to prevent shock and equipment damage.",safety,True,2026-02-19T16:42:01.887918+00:00

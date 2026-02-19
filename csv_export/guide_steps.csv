@@ -1,0 +1,42 @@
+id,guide_id,step_number,title,description,pro_tip
+1,1,1,Turn Off the Furnace,Switch your furnace to the OFF position or turn off the power at the circuit breaker.,Wait 30 seconds after turning off to let any residual airflow stop.
+6,2,1,Check the Thermostat,Ensure the thermostat is set to HEAT mode and the set temperature is above the current room temperature.,Bump the temperature up 5 degrees above room temp to force the call.
+12,3,1,Turn Off the AC Unit,Switch off at thermostat and disconnect switch near the outdoor unit.,
+18,4,1,Turn Off the AC,Turn off at the thermostat and breaker.,
+22,5,1,Check Compatibility,Verify your system is compatible. Most smart thermostats require a C-wire.,Use online compatibility checkers. Photo your current wiring first.
+28,6,1,Replace the Air Filter,"Check monthly, replace every 1-3 months.",Buy filters in bulk to always have replacements.
+33,7,1,Identify Leaks,Turn on the fan and feel for air escaping at joints. Use tissue to detect fluttering.,Focus on ducts closest to the air handler where pressure is highest.
+38,8,1,Turn Off the Fan,"Switch off at the wall switch. For safety, turn off the circuit breaker too.",
+2,1,2,Locate the Filter Compartment,Find the filter slot between the return air duct and the blower compartment.,Take a photo of the current filter orientation before removing it.
+7,2,2,Verify the Gas Supply,Check that the gas valve near the furnace is ON (handle parallel to the pipe).,"If you smell gas strongly, leave immediately and call your gas company."
+13,3,2,Remove Debris,"Clear leaves, grass clippings, and debris. Maintain at least 2 feet of clearance.",Trim back bushes or plants that have grown too close.
+19,4,2,Locate the Drain Line,Find the PVC condensate drain line near the indoor air handler.,Place towels around the drain pan if there is standing water.
+23,5,2,Turn Off HVAC Power,Turn off power at the circuit breaker.,
+29,6,2,Clean the Outdoor Unit,Remove debris and hose down coil fins. Maintain 2 feet of clearance.,"In winter, gently remove ice — let the defrost cycle handle most of it."
+34,7,2,Gather Materials,Get mastic sealant or metal-backed UL 181 tape. Avoid standard duct tape.,Mastic is the best long-term solution — apply with a paintbrush.
+39,8,2,Remove the Cover,Pull the cover down and squeeze spring clips to release. Some models use screws.,Place a towel below to catch falling dust.
+3,1,3,Remove the Old Filter,"Carefully slide the old filter out. Note the size printed on the frame (e.g., 16x25x1) and the airflow arrow.",
+8,2,3,Inspect the Air Filter,A severely clogged filter can cause overheating and shutdown. Replace if dirty.,
+14,3,3,Remove the Fan Guard,Unscrew the top fan guard/grille. Lift the fan assembly out carefully.,
+20,4,3,Clear with Vinegar,Pour 1 cup distilled white vinegar into the drain access point. Let sit 30 minutes.,"For stubborn clogs, use a wet/dry vacuum on the outdoor end."
+24,5,3,Remove the Old Thermostat,"Remove faceplate and label each wire with its terminal letter (R, W, Y, G, C).",Wrap tape around each wire and write the terminal letter on it.
+30,6,3,Check Refrigerant Lines,Inspect insulation on lines between indoor and outdoor units. Replace if damaged.,Black foam insulation tape is inexpensive and easy to apply.
+35,7,3,Clean Surfaces,Wipe the area around each leak with a damp cloth for proper adhesion.,
+40,8,3,Clean Cover and Blades,Wash the cover in warm soapy water. Vacuum dust from fan blades and motor housing.,Compressed air works great for hard-to-reach motor dust.
+4,1,4,Insert the New Filter,Slide the new filter in with the airflow arrow pointing toward the blower. Ensure a snug fit.,Write the installation date on the filter frame with a marker.
+9,2,4,Check the Igniter,Open the access panel and inspect the hot surface igniter for visible cracks or breaks.,Handle the igniter carefully — the ceramic element is very fragile.
+15,3,4,Clean the Coil Fins,Spray fins from inside out with a garden hose (NOT a pressure washer). Use coil cleaner for stubborn buildup.,Always spray from inside out to push dirt outward.
+21,4,4,Flush with Water,Flush the line with warm water. Check the outdoor exit for free flow.,Pour vinegar monthly during cooling season to prevent clogs.
+25,5,4,Install the New Base Plate,Mount the new base plate using a level. Mark and drill screw holes.,Measure if the new plate covers the old mounting mark.
+31,6,4,Clean Indoor Coil and Drain,Clean the evaporator coil with a soft brush. Flush the condensate drain with vinegar.,
+36,7,4,Apply Sealant,"Apply mastic generously over joints, extending 1 inch beyond seams. Use mesh tape for larger gaps.",Let mastic dry 24 hours before running the system.
+41,8,4,Reinstall and Test,"Reattach the cover, restore power, and test — the fan should spin freely and quietly.",Clean exhaust fans every 6 months for optimal performance.
+5,1,5,Restore Power and Test,Turn the furnace back on and set the thermostat to call for heat. Verify air flows through the vents.,Set a reminder to check your filter every 30 days.
+10,2,5,Reset the Furnace,"Turn off the power for 30 seconds, then turn it back on to reset the control board.",Note any blinking LED codes on the control board — they indicate specific errors.
+16,3,5,Straighten Bent Fins,Use a fin comb or butter knife to gently straighten bent aluminum fins.,Be gentle — the fins are thin and can break easily.
+26,5,5,Connect the Wires,Connect each labeled wire to its corresponding terminal.,"If no C-wire, some thermostats include a power extender kit."
+32,6,5,Test Both Modes,Test heating and cooling modes during seasonal changeover.,Listen for unusual sounds indicating failing components.
+37,7,5,Insulate Ducts,Wrap ducts in unconditioned spaces with R-6 or R-8 insulation.,Insulating attic ducts can reduce energy loss by 10-15%.
+11,2,6,Check the Flame Sensor,"If the furnace ignites but shuts off quickly, clean the flame sensor with fine sandpaper.",A dirty flame sensor is one of the most common and cheapest furnace fixes.
+17,3,6,Reassemble and Test,"Replace the fan guard, restore power, and set thermostat to cool.",Do this at the start of every cooling season.
+27,5,6,Configure,"Snap on the display, restore power, and follow the setup wizard for WiFi and scheduling.",Enable learning/adaptive features for automatic optimization.
