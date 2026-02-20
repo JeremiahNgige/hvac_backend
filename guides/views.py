@@ -1,13 +1,14 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from hvacapi.supabase_client import get_supabase
+from django.db.models import Q
+from .models import Guide
+from .serializers import GuideListSerializer, GuideDetailSerializer
 
 
 @api_view(['GET'])
 def guide_list(request):
     """List/search/filter guides."""
-    sb = get_supabase()
-    query = sb.table('guides').select('*')
+    guides = Guide.objects.select_related('category').all()
 
     # Filters
     category = request.query_params.get('category')
@@ -15,94 +16,35 @@ def guide_list(request):
     search = request.query_params.get('search')
 
     if category:
-        query = query.eq('category_id', category)
+        guides = guides.filter(category_id=category)
     if difficulty:
-        query = query.eq('difficulty', difficulty)
+        guides = guides.filter(difficulty=difficulty)
     if search:
-        query = query.or_(
-            f'title.ilike.%{search}%,summary.ilike.%{search}%'
+        guides = guides.filter(
+            Q(title__icontains=search) | Q(summary__icontains=search)
         )
 
-    result = query.order('created_at', desc=True).execute()
-    guides = result.data
-
-    # Enrich with category_name and step_count
-    _enrich_guides(sb, guides)
-
-    return Response(guides)
+    guides = guides.order_by('-created_at')
+    
+    serializer = GuideListSerializer(guides, many=True)
+    return Response(serializer.data)
 
 
 @api_view(['GET'])
 def guide_detail(request, pk):
     """Retrieve a guide with its steps and category."""
-    sb = get_supabase()
-
-    guide = (
-        sb.table('guides').select('*').eq('id', pk).single().execute()
-    ).data
-
-    # Get category
-    if guide.get('category_id'):
-        cat = (
-            sb.table('categories')
-            .select('*')
-            .eq('id', guide['category_id'])
-            .single()
-            .execute()
-        ).data
-        guide['category'] = cat
-
-    # Get steps
-    steps = (
-        sb.table('guide_steps')
-        .select('*')
-        .eq('guide_id', pk)
-        .order('step_number')
-        .execute()
-    ).data
-    guide['steps'] = steps
-
-    return Response(guide)
+    try:
+        guide = Guide.objects.select_related('category').prefetch_related('steps').get(pk=pk)
+    except Guide.DoesNotExist:
+        return Response({'error': 'Not found'}, status=404)
+        
+    serializer = GuideDetailSerializer(guide)
+    return Response(serializer.data)
 
 
 @api_view(['GET'])
 def guide_featured(request):
     """Return featured guides."""
-    sb = get_supabase()
-    result = (
-        sb.table('guides')
-        .select('*')
-        .eq('is_featured', True)
-        .order('created_at', desc=True)
-        .limit(6)
-        .execute()
-    )
-    guides = result.data
-    _enrich_guides(sb, guides)
-    return Response(guides)
-
-
-def _enrich_guides(sb, guides):
-    """Add category_name and step_count to a list of guide dicts."""
-    # Cache categories
-    cat_ids = {g['category_id'] for g in guides if g.get('category_id')}
-    cat_map = {}
-    if cat_ids:
-        cats = (
-            sb.table('categories')
-            .select('id, name')
-            .in_('id', list(cat_ids))
-            .execute()
-        ).data
-        cat_map = {c['id']: c['name'] for c in cats}
-
-    for g in guides:
-        g['category_name'] = cat_map.get(g.get('category_id'))
-        # Step count
-        count = (
-            sb.table('guide_steps')
-            .select('id', count='exact')
-            .eq('guide_id', g['id'])
-            .execute()
-        )
-        g['step_count'] = count.count or 0
+    guides = Guide.objects.select_related('category').filter(is_featured=True).order_by('-created_at')[:6]
+    serializer = GuideListSerializer(guides, many=True)
+    return Response(serializer.data)

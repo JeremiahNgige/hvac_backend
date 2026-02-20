@@ -60,6 +60,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'hvacapi.wsgi.application'
 
+from dotenv import load_dotenv
+
+load_dotenv(BASE_DIR / '.env')
+
 DATABASE_URL = os.environ.get("DATABASE_URL")
 
 DATABASES = {
